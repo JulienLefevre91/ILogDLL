@@ -40,8 +40,6 @@ namespace ILogDLL
                 //Console.WriteLine("[GetToken] Problème de récupération du Token : " + ex.Message + " | " + ex.StackTrace);
             }
 
-            //Console.WriteLine("Token iLog : " + token.AccessToken);
-
             return token;
         }
 
@@ -97,8 +95,6 @@ namespace ILogDLL
             }
 
             return success;
-            
-            //Console.WriteLine($"Azure {x.Comment} | {x.Subject} | {errorMsg} | Retour API => {json}");
         }
 
         internal static async Task<string> Post(Token token, dynamic parameters, string url)
